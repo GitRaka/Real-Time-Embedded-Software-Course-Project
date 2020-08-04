@@ -98,6 +98,9 @@ extern SPI_HandleTypeDef hspi1;
 extern __IO uint32_t wTransferState;
 extern volatile uint8_t tempValueReady, speedValueReady;
 extern float rtdTemp;
+extern uint8_t initDone;
+
+extern __IO uint32_t uwTick;
 // extern unsigned long long usTimerPeriodCounter;
 
 /** @} // group group_adc

@@ -34,6 +34,7 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stm32g4xx_nucleo.h"
+#include "adchal.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -61,6 +62,7 @@ void Error_Handler(void);
 /* USER CODE BEGIN EFP */
 void delay_us(uint32_t us);
 
+void schedulerExecutive(void);
 void processInput();
 void controlTask();
 void outputTask();
@@ -77,6 +79,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 /* Size of buffer */
 // #define BUFFERSIZE                       (COUNTOF(aTxBuffer) - 1)
 #define ONE 1
+#define CE_IMPLEMENTED  1
 /**
   * @brief DRDY GPIO Pin
   */
@@ -161,13 +164,13 @@ TIM1 Configuration: generate 4 PWM signals with 4 different duty cycles.
 #define  FREQ 							  4000
 #define  CAL_PERIOD_REG_VALUE(Freq)       (((uint32_t)(SystemCoreClock/((PRESCALER_VALUE+1)*Freq))) - 1)
 
-#define  PULSE1_VALUE       			  (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 10.0 / 100)              /* Capture Compare 1 Value  */
+#define  PULSE1_VALUE       			  (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 2.0 / 100)              /* Capture Compare 1 Value  */
 #define  PULSE2_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 15.0 / 100)     /* Capture Compare 2 Value  */
 #define  PULSE3_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 20.0 / 100)              /* Capture Compare 3 Value  */
 #define  PULSE4_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 50.0 / 100)
 #define  PULSE5_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 75.0 / 100)
 #define  PULSE6_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 80.0 / 100)
-#define  PULSE7_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 97.0 / 100)
+#define  PULSE7_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 100.0 / 100)
 
 
 /* Capture Compare 4 Value  */

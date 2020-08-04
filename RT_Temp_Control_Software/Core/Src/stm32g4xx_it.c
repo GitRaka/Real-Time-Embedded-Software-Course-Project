@@ -187,6 +187,9 @@ void SysTick_Handler(void)
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
+  // Call the Cyclic Executive to schedule all tasks
+  if (initDone == 1)
+	  schedulerExecutive();
 
   /* USER CODE END SysTick_IRQn 1 */
 }

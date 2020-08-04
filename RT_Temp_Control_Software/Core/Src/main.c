@@ -53,6 +53,7 @@ SPI_HandleTypeDef hspi1;
 DMA_HandleTypeDef hdma_spi1_tx;
 DMA_HandleTypeDef hdma_spi1_rx;
 uint32_t cnt;
+uint8_t initDone = 0;
 unsigned long long usTimerPeriodCounter = 0;
 //uint32_t traceCount;
 // unsigned long long usTimerPeriodCounter;
@@ -158,6 +159,9 @@ int main(void)
     tempValueReady = 0;
     readRTDtemp();
 
+    // Initialization complete. Reset sysTick counter and release the scheduler.
+    uwTick = 0;
+    initDone = 1;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -167,7 +171,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
+#ifndef CE_IMPLEMENTED
 		processInput();
 
 		if (tempValueReady)
@@ -180,25 +184,8 @@ int main(void)
 			outputTask(); // Convert to speed
 		}
 
-//		if (BSP_PB_GetState(BUTTON_USER) == GPIO_PIN_SET)
-//		{
-//			i++;
-//			BSP_LED_Toggle(LED2);
-//			HAL_Delay(100);
-//			if (i == 1)
-//			   TIM1->CCR1 = PULSE1_VALUE;
-//			if (i == 2)
-//			   TIM1->CCR1 = PULSE2_VALUE;
-//			if (i == 3)
-//			   TIM1->CCR1 = PULSE3_VALUE;
-//			if (i == 4)
-//			{
-//			   TIM1->CCR1 = PULSE4_VALUE;
-//			   i=0;
-//			}
-//		}
-
-
+#endif
+		//add background tasks here if needed
   }
   /* USER CODE END 3 */
 }
@@ -636,7 +623,10 @@ uint32_t getTimeDiff (timeSpec *timStop, timeSpec *timStart)
 	uint32_t rollDiff = 0;
 	rollDiff = timStop->usTimerResetcount - timStart->usTimerResetcount;
 
-	return ((timStop->usElapsed  - timStart->usElapsed) + 65535 * rollDiff );
+	if (rollDiff == 0)
+		return ((timStop->usElapsed  - timStart->usElapsed));
+	else
+		return ((65535 - timStart->usElapsed) + timStop->usElapsed + (65535*(rollDiff - 1)));
 
 }
 

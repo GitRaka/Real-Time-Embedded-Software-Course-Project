@@ -27,7 +27,7 @@ ADCchar_Set adcChars, adcChars2;
 float       rtdRes, rtdTemp;
 RTD_Set     *rtdSet = NULL;
 uint8_t     status;
-uint32_t traceCount;
+uint32_t 	traceCount;
 volatile uint8_t tempValueReady, speedValueReady;
 
 uint8_t tempreadexcess = 0;

@@ -30,10 +30,10 @@ static int32_t i = 0;
 #define temProfileHighVal1  0x12F57 // ~140 degC
 
 // Temperature profile 2
-#define temProfileLowVal2  0xBBF3; // ~-10 degC
-#define temProfileHighVal2 0x12F57; // ~140 degC
+#define temProfileLowVal2  0xBBF3 // ~-10 degC
+#define temProfileHighVal2 0x12F57 // ~140 degC
 
-int32_t adcCount = temProfileLowVal1;
+int32_t adcCount = temProfileLowVal2;
 //****************************************************************************
 //
 // Functions
@@ -61,11 +61,10 @@ int32_t adcCountEmulate()
 {
 
 	i++;
-	//increment temperature for every 1000 calls
-	// if((i % 10) == 0)
-	if((i % 1000 == 0) && (adcCount < temProfileHighVal1))
+	//increment temperature for every 10 calls
+	if((i % 10 == 0) && (adcCount < temProfileHighVal2))
 	{
-		adcCount = temProfileLowVal1 + i;
+		adcCount = adcCount + 100;
 	}
 
 	return adcCount;

@@ -32,8 +32,8 @@ Core/Src/application.o: ../Core/Src/application.c \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_pwr.h \
  ../Drivers/BSP/STM32G4xx_Nucleo/stm32g4xx_nucleo.h \
  ../Drivers/BSP/STM32G4xx_Nucleo/stm32g4xx_nucleo_errno.h \
- ../Core/Inc/stm32g4xx_nucleo_conf.h ../Core/Inc/ads114s08.h \
- ../Core/Inc/adchal.h ../Core/Inc/main.h ../Core/Inc/rtd.h \
+ ../Core/Inc/stm32g4xx_nucleo_conf.h ../Core/Inc/adchal.h \
+ ../Core/Inc/ads114s08.h ../Core/Inc/main.h ../Core/Inc/rtd.h \
  ../Core/Inc/rtd_tables.h ../Core/Inc/ads114s08.h
 
 ../Core/Inc/application.h:
@@ -106,9 +106,9 @@ Core/Src/application.o: ../Core/Src/application.c \
 
 ../Core/Inc/stm32g4xx_nucleo_conf.h:
 
-../Core/Inc/ads114s08.h:
-
 ../Core/Inc/adchal.h:
+
+../Core/Inc/ads114s08.h:
 
 ../Core/Inc/main.h:
 
