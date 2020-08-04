@@ -1,0 +1,16 @@
+adchal_TIDrivers.c:40:6:HAL_GPIO_EXTI_Callback	16	static
+adchal_TIDrivers.c:67:6:InitADCPeripherals	24	static
+adchal_TIDrivers.c:128:6:ReconfigureADC	24	static
+adchal_TIDrivers.c:159:15:getRESET	8	static
+adchal_TIDrivers.c:175:6:setRESET	16	static
+adchal_TIDrivers.c:187:6:toggleRESET	8	static
+adchal_TIDrivers.c:205:15:getSTART	8	static
+adchal_TIDrivers.c:219:6:setSTART	16	static
+adchal_TIDrivers.c:234:6:toggleSTART	8	static
+adchal_TIDrivers.c:256:6:sendSTART	16	static
+adchal_TIDrivers.c:272:6:sendSTOP	16	static
+adchal_TIDrivers.c:289:6:sendRESET	16	static
+adchal_TIDrivers.c:310:6:sendWakeup	16	static
+adchal_TIDrivers.c:356:6:waitForDRDYHtoL	24	static
+adchal_TIDrivers.c:384:6:spiSendReceiveArrays	24	static
+adchal_TIDrivers.c:441:9:spiSendReceiveByte	24	static

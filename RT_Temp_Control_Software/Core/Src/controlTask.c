@@ -77,7 +77,7 @@ void controlTask()
 	timDelay = getTimeDiff(&timStop, &timStart);
 	if (timDelay > 1000)
 	{
-		//Software breakpoint if the deadline is missed
+		// Control task exceeded its deadline
 		__asm__("BKPT");
 	}
 
@@ -143,7 +143,7 @@ void outputTask()
 	timDelay = getTimeDiff(&timStop, &timStart);
 	if (timDelay > 1000)
 	{
-		//Software breakpoint if the deadline is missed
+		// Output task exceeded its deadline
 		__asm__("BKPT");
 	}
 }

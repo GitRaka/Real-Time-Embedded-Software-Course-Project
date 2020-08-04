@@ -175,6 +175,7 @@ void processInput()
 		tempreadexcess = timDelay;
 		tempreadexcesstempvalue = rtdTemp;
 		__asm__("BKPT");
+		// Process input task exceeded its deadline
 
 	}
 

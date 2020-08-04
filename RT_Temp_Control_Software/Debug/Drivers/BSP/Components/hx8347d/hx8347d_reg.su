@@ -1,0 +1,2 @@
+hx8347d_reg.c:46:9:hx8347d_read_reg	32	static
+hx8347d_reg.c:59:9:hx8347d_write_reg	32	static

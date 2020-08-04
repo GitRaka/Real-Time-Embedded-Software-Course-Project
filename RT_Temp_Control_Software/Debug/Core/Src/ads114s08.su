@@ -1,0 +1,14 @@
+ads114s08.c:52:9:getRegisterValue	16	static
+ads114s08.c:60:9:adcCountEmulate	4	static
+ads114s08.c:85:7:adcStartupRoutine	48	static
+ads114s08.c:151:7:changeADCParameters	48	static
+ads114s08.c:199:9:readSingleRegister	24	static
+ads114s08.c:229:6:readMultipleRegisters	64	static
+ads114s08.c:259:6:writeSingleRegister	24	static
+ads114s08.c:292:6:writeMultipleRegisters	64	static
+ads114s08.c:327:6:sendCommand	16	static
+ads114s08.c:355:6:startConversions	8	static
+ads114s08.c:377:6:stopConversions	8	static
+ads114s08.c:398:6:resetADC	8	static
+ads114s08.c:421:9:readConvertedData	16	static
+ads114s08.c:502:7:restoreRegisterDefaults	4	static
