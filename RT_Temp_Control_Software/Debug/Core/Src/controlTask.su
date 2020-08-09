@@ -1,2 +1,2 @@
-controlTask.c:22:6:controlTask	32	static,ignoring_inline_asm
-controlTask.c:94:6:outputTask	40	static,ignoring_inline_asm
+controlTask.c:23:6:controlTask	32	static,ignoring_inline_asm
+controlTask.c:95:6:outputTask	40	static,ignoring_inline_asm

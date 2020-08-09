@@ -99,6 +99,7 @@ extern __IO uint32_t wTransferState;
 extern volatile uint8_t tempValueReady, speedValueReady;
 extern float rtdTemp;
 extern uint8_t initDone;
+extern uint32_t fanSpeedRef;
 
 extern __IO uint32_t uwTick;
 // extern unsigned long long usTimerPeriodCounter;

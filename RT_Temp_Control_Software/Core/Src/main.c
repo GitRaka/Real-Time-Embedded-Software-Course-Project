@@ -20,8 +20,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "stdio.h"  //printfs using SWV
 #include "adchal.h"
+#include "stdio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -48,10 +48,15 @@ TIM_HandleTypeDef htim7;
 /* USER CODE BEGIN PV */
 /* transfer state */
 TIM_HandleTypeDef htim1;
+TIM_HandleTypeDef htim3;
 __IO uint32_t wTransferState = TRANSFER_WAIT;
 SPI_HandleTypeDef hspi1;
 DMA_HandleTypeDef hdma_spi1_tx;
 DMA_HandleTypeDef hdma_spi1_rx;
+unsigned long long tachCounts = 0;
+uint32_t beforeCnt = 0;
+uint32_t tachCntFull = 0;
+uint32_t afterCnt = 0;
 uint32_t cnt;
 uint8_t initDone = 0;
 unsigned long long usTimerPeriodCounter = 0;
@@ -62,13 +67,16 @@ TIM_OC_InitTypeDef sConfigOC = {0};
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+extern void initialise_monitor_handles(void);
 static void MX_TIM7_Init(void);
+
 /* USER CODE BEGIN PFP */
 void MX_GPIO_Init();
 static void MX_TIM1_Init(void);
 static void MX_DMA_Init();
 static void MX_SPI1_Init();
 static void EXTI15_10_IRQHandler_Config(void);
+static void MX_TIM3_Init(void);
 // static void ADC_RESET_Pin_Init(void);
 // static void ADC_START_Pin_Init(void);
 void readRTDtemp();
@@ -114,6 +122,7 @@ int main(void)
 
   /* Configure the system clock */
   SystemClock_Config();
+  //initialise_monitor_handles();
 
   //ITM_SendChar('a');
   /* USER CODE BEGIN SysInit */
@@ -136,6 +145,7 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_DMA_Init();
+  MX_TIM3_Init();
   HAL_TIM_Base_Start_IT(&htim7);
   HAL_NVIC_SetPriority(TIM7_IRQn, 4, 0);
   HAL_NVIC_EnableIRQ(TIM7_IRQn);
@@ -170,6 +180,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
+
     /* USER CODE BEGIN 3 */
 #ifndef CE_IMPLEMENTED
 		processInput();
@@ -181,9 +192,9 @@ int main(void)
 
 		if (speedValueReady)
 		{
-			outputTask(); // Convert to speed
+			outputTask(); // Convert to Dutycycle
 		}
-
+		tachCounts = TIM3->CNT;
 #endif
 		//add background tasks here if needed
   }
@@ -274,6 +285,7 @@ static void MX_TIM7_Init(void)
 
 }
 
+
 /* USER CODE BEGIN 4 */
 /* -----------------------------------------------------------------------------*/
 /**
@@ -301,12 +313,37 @@ void TIM7_IRQHandler(void)
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-	HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_10);
-	usTimerPeriodCounter++;
+	if (htim->Instance == TIM7)
+	{
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_10);
+		usTimerPeriodCounter++;
+	}
 
-	//HAL_TIM_Base_Stop_IT(&htim7);
-	//HAL_TIM_Base_Start_IT(&htim7);
+	if (htim->Instance == TIM3)
+	{
+		tachCntFull++;
+	}
+
+
+	// HAL_TIM_Base_Stop_IT(&htim7);
+	// HAL_TIM_Base_Start_IT(&htim7);
 }
+/* -----------------------------------------------------------------------------*/
+/**
+  * @brief Error handler for timer period elapsed
+  * @param None
+  * @retval None
+  */
+void TIM3_IRQHandler(void)
+{
+	HAL_TIM_IRQHandler(&htim3);
+}
+
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
+{
+	tachCntFull++;
+}
+
 /* -----------------------------------------------------------------------------*/
 /**
   * @brief SPI1 Initialization Function
@@ -498,6 +535,7 @@ static void MX_TIM1_Init(void)
 }
 /* -----------------------------------------------------------------------------*/
 
+
 static void EXTI15_10_IRQHandler_Config(void)
 /**
   * @brief  Configures EXTI lines 10 to 15 (connected to PC.13 pin) in interrupt mode
@@ -524,6 +562,60 @@ static void EXTI15_10_IRQHandler_Config(void)
   HAL_NVIC_SetPriority(DRDY_EXTI_IRQn, 2, 0);
   HAL_NVIC_EnableIRQ(DRDY_EXTI_IRQn);
 }
+/* -----------------------------------------------------------------------------*/
+/**
+  * @brief TIM3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM3_Init(void)
+{
+
+  /* USER CODE BEGIN TIM3_Init 0 */
+
+  /* USER CODE END TIM3_Init 0 */
+
+	TIM_IC_InitTypeDef sICConfig = {0};
+
+  /* USER CODE BEGIN TIM3_Init 1 */
+
+	  __HAL_RCC_TIM3_CLK_ENABLE();
+  /* USER CODE END TIM3_Init 1 */
+	  htim3.Instance = TIM3;
+	  htim3.Init.Prescaler = 0;
+	  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+	  htim3.Init.Period = 65535;
+	  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV4;
+
+	  if(HAL_TIM_IC_Init(&htim3)!=HAL_OK)
+	  {
+		  Error_Handler();
+	  }
+
+	  sICConfig.ICPolarity = TIM_ICPOLARITY_RISING;
+	  sICConfig.ICSelection = TIM_CCMR1_CC1S_0;
+	  sICConfig.ICPrescaler = TIM_ICPSC_DIV1;
+	  sICConfig.ICFilter = TIM_CCMR1_CC1S_0;
+
+
+	  if(HAL_TIM_IC_ConfigChannel (&htim3, &sICConfig, TIM_CHANNEL_1)!=HAL_OK)
+	  {
+		  Error_Handler();
+	  }
+
+	  HAL_TIM_MspPostInit(&htim3);
+
+  /* USER CODE BEGIN TIM7_Init 2 */
+	  //__HAL_TIM_ENABLE_IT(&htim7, TIM_IT_UPDATE);
+	  if(HAL_TIM_IC_Start_IT(&htim3, TIM_CHANNEL_1)!=HAL_OK)
+	  {
+		  Error_Handler();
+	  }
+	  HAL_NVIC_SetPriority(TIM3_IRQn, 2, 0);
+	  HAL_NVIC_EnableIRQ(TIM3_IRQn);
+  /* USER CODE END TIM7_Init 2 */
+}
+
 ///* -----------------------------------------------------------------------------*/
 ///**
 //  * @brief  Configures ADC Reset GPIO Pin
@@ -608,8 +700,9 @@ void HAL_SPI_ErrorCallback(SPI_HandleTypeDef *hspi)
 
 void getCurrentTime (timeSpec *currTime)
 {
-	currTime->usTimerResetcount = usTimerPeriodCounter;
+
 	currTime->usElapsed = TIM7->CNT;
+	currTime->usTimerResetcount = usTimerPeriodCounter;
 }
 
 /**
@@ -621,12 +714,19 @@ void getCurrentTime (timeSpec *currTime)
 uint32_t getTimeDiff (timeSpec *timStop, timeSpec *timStart)
 {
 	uint32_t rollDiff = 0;
+	uint32_t usdiff = 0;
 	rollDiff = timStop->usTimerResetcount - timStart->usTimerResetcount;
+	usdiff = timStop->usElapsed  - timStart->usElapsed;
 
 	if (rollDiff == 0)
-		return ((timStop->usElapsed  - timStart->usElapsed));
+	{
+		if (usdiff >= 0)
+			return usdiff;
+		else
+			return ((65535 - timStart->usElapsed) + timStop->usElapsed);
+	}
 	else
-		return ((65535 - timStart->usElapsed) + timStop->usElapsed + (65535*(rollDiff - 1)));
+		return ((65535 - timStart->usElapsed) + timStop->usElapsed + (65535*(rollDiff-1)));
 
 }
 
@@ -665,3 +765,4 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+//monitor arm semihost enable

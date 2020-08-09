@@ -1,0 +1,3059 @@
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.299002
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002638 msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002638 msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Info : Padding image section 1 at 0x08007c3c with 4 bytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002638 msp: 0x20008000, semihosting
+
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+shutdown command invoked
+
+
+Info : dropped 'gdb' connection
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.297405
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002638 msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002638 msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Info : Padding image section 1 at 0x08007c5c with 4 bytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000, semihosting
+
+ReadTask completed in 69 usThe rtdTemp value is: -1070898555
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 usThe rtdTemp value is: -1070898555
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1070898555
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1070898555
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 usThe rtdTemp value is: -1070898555
+ReadTask completed in 69 usThe rtdTemp value is: -1070898555
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 usThe rtdTemp value is: -1070898555
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 usThe rtdTemp value is: -1070898555
+ReadTask completed in 1 us
+ReadTask completed in 69 usThe rtdTemp value is: -1070898555
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+ReadTask completed in 69 usThe rtdTemp value is: -1070964662
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1070964662
+ReadTask completed in 70 usThe rtdTemp value is: -1070964662
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 usThe rtdTemp value is: -1070964662
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 usThe rtdTemp value is: -1070964662
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1070964662
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1070964662
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+ReadTask completed in 69 usThe rtdTemp value is: -1070964662
+ReadTask completed in 69 usThe rtdTemp value is: -1070964662
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 usThe rtdTemp value is: -1070964662
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071030766
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071030766
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 usThe rtdTemp value is: -1071030766
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071030766
+ReadTask completed in 69 usThe rtdTemp value is: -1071030766
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071030766
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071030766
+ReadTask completed in 2 us
+ReadTask completed in 69 usThe rtdTemp value is: -1071030766
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 usThe rtdTemp value is: -1071030766
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+ReadTask completed in 69 usThe rtdTemp value is: -1071030766
+ReadTask completed in 69 usThe rtdTemp value is: -1071096872
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 usThe rtdTemp value is: -1071096872
+ReadTask completed in 2 us
+ReadTask completed in 10 us
+ReadTask completed in 69 usThe rtdTemp value is: -1071096872
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071096872
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 69 usThe rtdTemp value is: -1071096872
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071096872
+ReadTask completed in 70 usThe rtdTemp value is: -1071096872
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071096872
+ReadTask completed in 2 us
+ReadTask completed in 10 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071096872
+ReadTask completed in 1 us
+ReadTask completed in 69 usThe rtdTemp value is: -1071096872
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071162977
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 usThe rtdTemp value is: -1071162977
+ReadTask completed in 69 usThe rtdTemp value is: -1071162977
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 usThe rtdTemp value is: -1071162977
+shutdown command invoked
+
+
+Info : dropped 'gdb' connection
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.297405
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Info : Padding image section 1 at 0x08007c5c with 4 bytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000, semihosting
+shutdown command invoked
+
+
+Info : dropped 'gdb' connection
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.297405
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Info : Padding image section 1 at 0x08007c5c with 4 bytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000, semihosting
+
+ReadTask completed in 69 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 69 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 70 us
+shutdown command invoked
+
+
+Info : dropped 'gdb' connection
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.299002
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Info : Padding image section 1 at 0x08007c5c with 4 bytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000, semihosting
+
+ReadTask completed in 69 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 69 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+ReadTask completed in 70 us
+
+
+The rtdTemp value is: 
+
+
+ReadTask completed in 10 us
+shutdown command invoked
+
+
+Info : dropped 'gdb' connection
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.297405
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002658 msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Info : Padding image section 1 at 0x0800b284 with 4 bytes
+Warn : Padding 4 bytes to keep 8-byte write size
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000, semihosting
+
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 70 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 70 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 9 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 9 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 10 us
+ReadTask completed in 69 us
+ReadTask completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 10 us
+ReadTask completed in 2 us
+shutdown command invoked
+
+
+Info : dropped 'gdb' connection
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.297405
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Info : Padding image section 1 at 0x0800b284 with 4 bytes
+Warn : Padding 4 bytes to keep 8-byte write size
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000, semihosting
+
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+shutdown command invoked
+
+
+Info : dropped 'gdb' connection
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.297405
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Info : Padding image section 1 at 0x0800b284 with 4 bytes
+Warn : Padding 4 bytes to keep 8-byte write size
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000, semihosting
+Info : no flash patch comparator unit available for hardware breakpoint
+Error: can't add breakpoint: resource not available
+Info : no flash patch comparator unit available for hardware breakpoint
+Error: can't add breakpoint: resource not available
+Info : no flash patch comparator unit available for hardware breakpoint
+Error: can't add breakpoint: resource not available
+
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+shutdown command invoked
+
+
+Info : dropped 'gdb' connection
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.297405
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Info : Padding image section 1 at 0x0800b284 with 4 bytes
+Warn : Padding 4 bytes to keep 8-byte write size
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000, semihosting
+
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+Info : halted: PC: 0x08001008
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002698 msp: 0x20008000, semihosting
+semihosting is enabled
+Info : no flash patch comparator unit available for hardware breakpoint
+Error: can't add breakpoint: resource not available
+
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 70 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 9 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 9 us
+ReadTask completed in 69 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 70 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 2 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+Output Task completed in 10 us
+ReadTask completed in 69 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+
+ Fan Speeed Ref = 0
+ReadTask completed in 69 us
+Output Task completed in 10 us
+Control Task completed in 1 us
+shutdown command invoked
+
+
+Info : dropped 'gdb' connection
+
+
+STMicroelectronics ST-LINK GDB server. Version 5.5.0
+Copyright (c) 2019, STMicroelectronics. All rights reserved.
+
+Starting server with the following options:
+        Persistent Mode            : Disabled
+        Logging Level              : 1
+        Listen Port Number         : 61234
+        Status Refresh Delay       : 15s
+        Verbose Mode               : Disabled
+        SWD Debug                  : Enabled
+        InitWhile                  : Enabled
+
+Waiting for debugger connection...
+Debugger connected
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.4.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 001900273137510539383538
+ST-LINK FW  : V3J6M2
+Voltage     : 3.30V
+SWD freq    : 24000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x468
+Device name : STM32G43x/G44x
+Flash size  : 128 KBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+
+
+
+Memory Programming ...
+Opening and parsing file: ST-LINK_GDB_server_a69464.srec
+  File          : ST-LINK_GDB_server_a69464.srec
+  Size          : 51620 Bytes
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 25]
+Download in Progress:
+
+
+File download complete
+Time elapsed during download operation: 00:00:01.522
+
+
+
+Verifying ...
+
+
+
+
+Download verified successfully 
+
+
+handle_vCont_t, Thread already stopped
+Debugger connection lost.
+Shutting down...
+
+
+
+STMicroelectronics ST-LINK GDB server. Version 5.5.0
+Copyright (c) 2019, STMicroelectronics. All rights reserved.
+
+Starting server with the following options:
+        Persistent Mode            : Disabled
+        Logging Level              : 1
+        Listen Port Number         : 61234
+        Status Refresh Delay       : 15s
+        Verbose Mode               : Disabled
+        SWD Debug                  : Enabled
+        InitWhile                  : Enabled
+
+Waiting for debugger connection...
+Debugger connected
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.4.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 001900273137510539383538
+ST-LINK FW  : V3J6M2
+Voltage     : 3.30V
+SWD freq    : 24000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x468
+Device name : STM32G43x/G44x
+Flash size  : 128 KBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+
+
+
+Memory Programming ...
+Opening and parsing file: ST-LINK_GDB_server_a14732.srec
+  File          : ST-LINK_GDB_server_a14732.srec
+  Size          : 50908 Bytes
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 24]
+Download in Progress:
+
+
+File download complete
+Time elapsed during download operation: 00:00:01.475
+
+
+
+Verifying ...
+
+
+
+
+Download verified successfully 
+
+
+handle_vCont_t, Thread already stopped
+Debugger connection lost.
+Shutting down...
+
+
+
+STMicroelectronics ST-LINK GDB server. Version 5.5.0
+Copyright (c) 2019, STMicroelectronics. All rights reserved.
+
+Starting server with the following options:
+        Persistent Mode            : Disabled
+        Logging Level              : 1
+        Listen Port Number         : 61234
+        Status Refresh Delay       : 15s
+        Verbose Mode               : Disabled
+        SWD Debug                  : Enabled
+        InitWhile                  : Enabled
+
+Waiting for debugger connection...
+Debugger connected
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.4.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 001900273137510539383538
+ST-LINK FW  : V3J6M2
+Voltage     : 3.30V
+SWD freq    : 24000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x468
+Device name : STM32G43x/G44x
+Flash size  : 128 KBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+
+
+
+Memory Programming ...
+Opening and parsing file: ST-LINK_GDB_server_a88544.srec
+  File          : ST-LINK_GDB_server_a88544.srec
+  Size          : 47524 Bytes
+  Address       : 0x08000000 
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 23]
+Download in Progress:
+
+
+File download complete
+Time elapsed during download operation: 00:00:01.419
+
+
+
+Verifying ...
+
+
+
+
+Download verified successfully 
+
+
+handle_vCont_t, Thread already stopped
+Debugger connection lost.
+Shutting down...
+

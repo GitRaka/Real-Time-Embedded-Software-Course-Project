@@ -1,0 +1,173 @@
+Open On-Chip Debugger 0.10.0+dev-01193-g5ce997d (2020-02-20-10:57)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 8000 kHz
+Info : STLINK V3J6M2 (API v3) VID:PID 0483:374E
+Info : using stlink api v3
+Info : Target voltage: 3.297405
+Info : SRST line asserted
+Info : STM32G431RBTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000c5c msp: 0x20008000
+adapter speed: 8000 kHz
+Info : device idcode = 0x20016468 (STM32G43/G44xx - Rev: Z)
+Info : flash size = 128kbytes
+Info : flash mode : single-bank
+semihosting is enabled
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000c5c msp: 0x20008000, semihosting
+adapter speed: 8000 kHz
+Info : Padding image section 0 at 0x080001d8 with 8 bytes
+Warn : Padding 4 bytes to keep 8-byte write size
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20008000, semihosting
+Info : block write succeeded
+Info : SRST line asserted
+Info : SRST line released
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000c5c msp: 0x20008000, semihosting
+Initializing...
+Completed the fib01 task in 4
+
+Completed the fib2 task in 638
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib4 task in 941
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 4425
+
+Completed the fib4 task in 611
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib4 task in 611
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib200 task in 10466
+
+Completed the fib01 task in 2439
+
+Completed the fib4 task in 610
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 4
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib4 task in 611
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib01 task in 3
+
+Completed the fib2 task in 307
+

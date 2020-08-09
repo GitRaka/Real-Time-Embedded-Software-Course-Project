@@ -35,6 +35,7 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "stm32g4xx_nucleo.h"
 #include "adchal.h"
+#include "stdio.h"  //printfs using SWV
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -164,7 +165,7 @@ TIM1 Configuration: generate 4 PWM signals with 4 different duty cycles.
 #define  FREQ 							  4000
 #define  CAL_PERIOD_REG_VALUE(Freq)       (((uint32_t)(SystemCoreClock/((PRESCALER_VALUE+1)*Freq))) - 1)
 
-#define  PULSE1_VALUE       			  (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 2.0 / 100)              /* Capture Compare 1 Value  */
+#define  PULSE1_VALUE       			  (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 1.0 / 100)              /* Capture Compare 1 Value  */
 #define  PULSE2_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 15.0 / 100)     /* Capture Compare 2 Value  */
 #define  PULSE3_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 20.0 / 100)              /* Capture Compare 3 Value  */
 #define  PULSE4_VALUE       		      (uint32_t)(CAL_PERIOD_REG_VALUE(FREQ) * 50.0 / 100)

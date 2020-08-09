@@ -1,3 +1,3 @@
-application.c:37:6:emulateInit	16	static
-application.c:55:6:readRTDtemp	16	static
-application.c:128:6:processInput	32	static,ignoring_inline_asm
+application.c:36:6:emulateInit	16	static
+application.c:54:6:readRTDtemp	16	static
+application.c:127:6:processInput	32	static,ignoring_inline_asm

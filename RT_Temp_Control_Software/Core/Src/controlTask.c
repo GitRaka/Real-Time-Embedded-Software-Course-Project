@@ -8,8 +8,9 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adchal.h"
+#include "stdio.h"
 /* Private variables ---------------------------------------------------------*/
-uint32_t fanSpeedCmd;
+uint32_t fanSpeedRef;
 
 /**
  *
@@ -38,37 +39,37 @@ void controlTask()
 // open loop fan speed control
 	if (tempValue <= 15)
 	{
-		fanSpeedCmd = 0;
+		fanSpeedRef = 0;
 	}
 
 	else if (tempValue > 15 && tempValue < 30)
 	{
-		fanSpeedCmd = 1000;  //rpm
+		fanSpeedRef = 1000;  //rpm
 	}
 
 	else if (tempValue > 30 && tempValue < 45)
 	{
-		fanSpeedCmd = 2000;  //rpm
+		fanSpeedRef = 2000;  //rpm
 	}
 
 	else if (tempValue > 45 && tempValue < 55)
 	{
-		fanSpeedCmd = 2650;  //rpm
+		fanSpeedRef = 2650;  //rpm
 	}
 
 	else if (tempValue > 55 && tempValue < 65)
 	{
-		fanSpeedCmd = 3300;  //rpm
+		fanSpeedRef = 3300;  //rpm
 	}
 
 	else if (tempValue > 65 && tempValue < 80)
 	{
-		fanSpeedCmd = 3500;  //rpm
+		fanSpeedRef = 3500;  //rpm
 	}
 
 	else if (tempValue > 80)
 	{
-		fanSpeedCmd = 4000;  //rpm
+		fanSpeedRef = 4000;  //rpm
 	}
 	// Indicate to consumer that the data is ready
 	speedValueReady = 1;
@@ -103,7 +104,7 @@ void outputTask()
 	// record start time
 	getCurrentTime(&timStart);
 
-	speedValue = fanSpeedCmd;
+	speedValue = fanSpeedRef;
 	// Clear the update flag after data read
 	speedValueReady = 0;
 

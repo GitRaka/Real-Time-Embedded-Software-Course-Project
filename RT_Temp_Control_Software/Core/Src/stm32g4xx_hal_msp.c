@@ -318,7 +318,6 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* htim)
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF11_TIM1;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   }
 
@@ -348,6 +347,30 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* htim)
   /* USER CODE END TIM1_MspPostInit 1 */
   }
 
+    if(htim->Instance==TIM3)
+    {
+    /* USER CODE BEGIN TIM1_MspPostInit 0 */
+
+    /* USER CODE END TIM1_MspPostInit 0 */
+
+      __HAL_RCC_GPIOA_CLK_ENABLE();
+      /**TIM1 GPIO Configuration
+      PC6     ------> TIM8_CH1
+      PC7     ------> TIM8_CH2
+      PC8     ------> TIM8_CH3
+      PC9     ------> TIM8_CH4
+      */
+      GPIO_InitStruct.Pin = GPIO_PIN_10;
+      GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+      GPIO_InitStruct.Pull = GPIO_NOPULL;
+      //GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+      GPIO_InitStruct.Alternate = GPIO_AF10_TIM3;
+      HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /* USER CODE BEGIN TIM1_MspPostInit 1 */
+
+  /* USER CODE END TIM1_MspPostInit 1 */
+  }
 }
 /**
 * @brief TIM_PWM MSP De-Initialization
